@@ -7,11 +7,47 @@ import win32api, win32con
 
 time.sleep(2)
 
+mapstatuslog = 0
+
+def go_left():
+    pyautogui.click(330, 495)
+
+
+def go_right():
+    pyautogui.click(1587, 530)
+
+
+def go_up():
+    pyautogui.click(972, 27)
+
+
+def go_down():
+    pyautogui.click(979, 919)
+
 
 def click(x, y):
     win32api.SetCursorPos((x, y))
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
+
+
+def loopInASquare(mapstatus):
+    mapstatus += mapstatuslog
+
+    if mapstatus == 0:
+        go_left()
+        mapstatus += 1
+
+    elif mapstatus == 1:
+        go_up()
+        mapstatus += 1
+
+    elif mapstatus == 2:
+        go_right()
+
+    elif mapstatus == 3:
+        go_down()
+        mapstatus -= 3
 
 
 while 1:
@@ -70,7 +106,7 @@ while 1:
             location = pyautogui.center(sauge)
             pyautogui.click(location)
             print("I can see sauge")
-            time.sleep()
+            time.sleep(6)
         while pyautogui.locateOnScreen('images/sauge2.png', confidence=0.6) != None:
             sauge2 = pyautogui.locateOnScreen('images/sauge2.png', confidence=0.6)
             location = pyautogui.center(sauge2)
@@ -187,7 +223,7 @@ while 1:
             print("I can see chat2")
             time.sleep(8)
         # Combat--------------------------------------------------------------------
-        while pyautogui.locateOnScreen('images/combat.png', confidence=0.8) is not None:
+        while pyautogui.locateOnScreen('images/combat.png', confidence=0.8) is not None or pyautogui.locateOnScreen('images/combat2.png', confidence=0.8) is not None:
             pyautogui.press('f1')
             time.sleep(2)
             pyautogui.press('f1')
@@ -211,6 +247,8 @@ while 1:
         else:
             print("I am unable to see anything")
             time.sleep(3.3)
+            loopInASquare(mapstatuslog)
+
 
     except Exception as ex:
         print(ex)
