@@ -7,7 +7,8 @@ import win32api, win32con
 
 time.sleep(2)
 
-mapstatuslog = 0
+mapstatus = 0
+
 
 def go_left():
     pyautogui.click(330, 495)
@@ -29,25 +30,6 @@ def click(x, y):
     win32api.SetCursorPos((x, y))
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0)
-
-
-def loopInASquare(mapstatus):
-    mapstatus += mapstatuslog
-
-    if mapstatus == 0:
-        go_left()
-        mapstatus += 1
-
-    elif mapstatus == 1:
-        go_up()
-        mapstatus += 1
-
-    elif mapstatus == 2:
-        go_right()
-
-    elif mapstatus == 3:
-        go_down()
-        mapstatus -= 3
 
 
 while 1:
@@ -113,8 +95,8 @@ while 1:
             pyautogui.click(location)
             print("I can see sauge2")
             time.sleep(8)
-        while pyautogui.locateOnScreen('images/clover.png', confidence=0.5) != None:
-            clover = pyautogui.locateOnScreen('images/clover.png', confidence=0.5)
+        while pyautogui.locateOnScreen('images/clover.png', confidence=0.6) != None:
+            clover = pyautogui.locateOnScreen('images/clover.png', confidence=0.6)
             location = pyautogui.center(clover)
             pyautogui.click(location)
             print("I can see clover")
@@ -204,8 +186,8 @@ while 1:
             pyautogui.click(location)
             print("I can see frene1")
             time.sleep(8)
-        while pyautogui.locateOnScreen('images/frene2.png', confidence=0.65) != None:
-            frene2 = pyautogui.locateOnScreen('images/frene2.png', confidence=0.65)
+        while pyautogui.locateOnScreen('images/frene2.png', confidence=0.68) != None:
+            frene2 = pyautogui.locateOnScreen('images/frene2.png', confidence=0.68)
             location = pyautogui.center(frene2)
             pyautogui.click(location)
             print("I can see frene2")
@@ -223,11 +205,14 @@ while 1:
             print("I can see chat2")
             time.sleep(8)
         # Combat--------------------------------------------------------------------
-        while pyautogui.locateOnScreen('images/combat.png', confidence=0.8) is not None or pyautogui.locateOnScreen('images/combat2.png', confidence=0.8) is not None:
+        while pyautogui.locateOnScreen('images/combat.png', confidence=0.8) is not None or pyautogui.locateOnScreen(
+                'images/combat2.png', confidence=0.8) is not None:
+            print("Starting battle now")
             pyautogui.press('f1')
             time.sleep(2)
             pyautogui.press('f1')
             while pyautogui.locateOnScreen('images/spell2.png', confidence=0.8) != None:
+                print("Time to attack")
                 spell2 = pyautogui.locateOnScreen('images/spell2.png', confidence=0.8)
                 location = pyautogui.center(spell2)
                 pyautogui.click(location)
@@ -247,7 +232,117 @@ while 1:
         else:
             print("I am unable to see anything")
             time.sleep(3.3)
-            loopInASquare(mapstatuslog)
+            # If loops to change maps------------------------------------------
+            if mapstatus == 0:
+                mapstatus += 1
+                go_down()
+                time.sleep(4)
+
+            elif mapstatus == 1:
+                mapstatus += 1
+                go_left()
+                time.sleep(4)
+
+            elif mapstatus == 2:
+                mapstatus += 1
+                go_left()
+                time.sleep(4)
+
+            elif mapstatus == 3:
+                mapstatus += 1
+                go_left()
+                time.sleep(4)
+
+            elif mapstatus == 4:
+                mapstatus += 1
+                go_down()
+                time.sleep(4)
+
+            elif mapstatus == 5:
+                mapstatus += 1
+                go_right()
+                time.sleep(4)
+
+            elif mapstatus == 6:
+                mapstatus += 1
+                go_right()
+                time.sleep(4)
+
+            elif mapstatus == 7:
+                mapstatus += 1
+                go_right()
+                time.sleep(4)
+
+            elif mapstatus == 8:
+                mapstatus += 1
+                go_down()
+                time.sleep(4)
+
+            elif mapstatus == 9:
+                mapstatus += 1
+                go_left()
+                time.sleep(4)
+
+            elif mapstatus == 10:
+                mapstatus += 1
+                go_left()
+                time.sleep(4)
+
+            elif mapstatus == 11:
+                mapstatus += 1
+                go_left()
+                time.sleep(4)
+
+            elif mapstatus == 12:
+                mapstatus += 1
+                go_down()
+                time.sleep(4)
+
+            elif mapstatus == 13:
+                mapstatus += 1
+                go_right()
+                time.sleep(4)
+
+            elif mapstatus == 14:
+                mapstatus += 1
+                go_right()
+                time.sleep(4)
+
+            elif mapstatus == 15:
+                mapstatus += 1
+                go_right()
+                time.sleep(4)
+
+            elif mapstatus == 16:
+                mapstatus += 1
+                go_down()
+                time.sleep(4)
+
+            elif mapstatus == 17:
+                mapstatus += 1
+                go_up()
+                time.sleep(4)
+
+            elif mapstatus == 18:
+                mapstatus += 1
+                go_up()
+                time.sleep(4)
+
+            elif mapstatus == 19:
+                mapstatus += 1
+                go_up()
+                time.sleep(4)
+
+            elif mapstatus == 20:
+                mapstatus += 1
+                go_up()
+                time.sleep(4)
+
+            elif mapstatus == 21:
+                mapstatus = 0
+                go_up()
+                time.sleep(4)
+
 
 
     except Exception as ex:
