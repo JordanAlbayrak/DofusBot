@@ -186,8 +186,8 @@ while 1:
             pyautogui.click(location)
             print("I can see frene1")
             time.sleep(8)
-        while pyautogui.locateOnScreen('images/frene2.png', confidence=0.68) != None:
-            frene2 = pyautogui.locateOnScreen('images/frene2.png', confidence=0.68)
+        while pyautogui.locateOnScreen('images/frene2.png', confidence=0.7) != None:
+            frene2 = pyautogui.locateOnScreen('images/frene2.png', confidence=0.7)
             location = pyautogui.center(frene2)
             pyautogui.click(location)
             print("I can see frene2")
@@ -206,12 +206,15 @@ while 1:
             time.sleep(8)
         # Combat--------------------------------------------------------------------
         while pyautogui.locateOnScreen('images/combat.png', confidence=0.8) is not None or pyautogui.locateOnScreen(
-                'images/combat2.png', confidence=0.8) is not None:
-            print("Starting battle now")
+                'images/combat2.png', confidence=0.8) is not None or pyautogui.locateOnScreen(
+                'images/combat3.png', confidence=0.8) is not None:
+            print("Entered battle")
             pyautogui.press('f1')
             time.sleep(2)
             pyautogui.press('f1')
-            while pyautogui.locateOnScreen('images/spell2.png', confidence=0.8) != None:
+            print("Passing my turn")
+            time.sleep(2)
+            if pyautogui.locateOnScreen('images/spell2.png', confidence=0.8) != None:
                 print("Time to attack")
                 spell2 = pyautogui.locateOnScreen('images/spell2.png', confidence=0.8)
                 location = pyautogui.center(spell2)
@@ -236,114 +239,112 @@ while 1:
             if mapstatus == 0:
                 mapstatus += 1
                 go_down()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 1:
                 mapstatus += 1
                 go_left()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 2:
                 mapstatus += 1
                 go_left()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 3:
                 mapstatus += 1
                 go_left()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 4:
                 mapstatus += 1
                 go_down()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 5:
                 mapstatus += 1
                 go_right()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 6:
                 mapstatus += 1
                 go_right()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 7:
                 mapstatus += 1
                 go_right()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 8:
                 mapstatus += 1
                 go_down()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 9:
                 mapstatus += 1
                 go_left()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 10:
                 mapstatus += 1
                 go_left()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 11:
                 mapstatus += 1
                 go_left()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 12:
                 mapstatus += 1
                 go_down()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 13:
                 mapstatus += 1
                 go_right()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 14:
                 mapstatus += 1
                 go_right()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 15:
                 mapstatus += 1
                 go_right()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 16:
                 mapstatus += 1
                 go_down()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 17:
                 mapstatus += 1
                 go_up()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 18:
                 mapstatus += 1
                 go_up()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 19:
                 mapstatus += 1
                 go_up()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 20:
                 mapstatus += 1
                 go_up()
-                time.sleep(4)
+                time.sleep(5)
 
             elif mapstatus == 21:
                 mapstatus = 0
                 go_up()
-                time.sleep(4)
-
-
+                time.sleep(5)
 
     except Exception as ex:
         print(ex)
