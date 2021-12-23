@@ -10,18 +10,22 @@ mapstatus = 0
 
 
 def go_left():
+    print("going left")
     pyautogui.click(330, 495)
 
 
 def go_right():
+    print("going right")
     pyautogui.click(1587, 530)
 
 
 def go_up():
+    print("going up")
     pyautogui.click(972, 27)
 
 
 def go_down():
+    print("going down")
     pyautogui.click(979, 919)
 
 
@@ -235,115 +239,226 @@ while 1:
             print("I am unable to see anything")
             time.sleep(3.3)
             # If loops to change maps------------------------------------------
-            if mapstatus == 0:
-                mapstatus += 1
+            if pyautogui.locateOnScreen('images/maps/2-29.png', confidence=0.95) != None:
                 go_down()
                 time.sleep(5)
 
-            elif mapstatus == 1:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/2-28.png', confidence=0.95) != None:
                 go_left()
                 time.sleep(5)
 
-            elif mapstatus == 2:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/1-28.png', confidence=0.95) != None:
                 go_left()
                 time.sleep(5)
 
-            elif mapstatus == 3:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/0-28.png', confidence=0.95) != None:
                 go_left()
                 time.sleep(5)
 
-            elif mapstatus == 4:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/-1-28.png', confidence=0.95) != None:
                 go_down()
                 time.sleep(5)
 
-            elif mapstatus == 5:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/-1-27.png', confidence=0.95) != None:
                 go_right()
                 time.sleep(5)
 
-            elif mapstatus == 6:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/0-27.png', confidence=0.95) != None:
                 go_right()
                 time.sleep(5)
 
-            elif mapstatus == 7:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/1-27.png', confidence=0.95) != None:
                 go_right()
                 time.sleep(5)
 
-            elif mapstatus == 8:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/2-27.png', confidence=0.95) != None:
                 go_down()
                 time.sleep(5)
 
-            elif mapstatus == 9:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/2-26.png', confidence=0.95) != None:
                 go_left()
                 time.sleep(5)
 
-            elif mapstatus == 10:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/1-26.png', confidence=0.95) != None:
                 go_left()
                 time.sleep(5)
 
-            elif mapstatus == 11:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/0-26.png', confidence=0.95) != None:
                 go_left()
                 time.sleep(5)
 
-            elif mapstatus == 12:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/-1-26.png', confidence=0.95) != None:
                 go_down()
                 time.sleep(5)
 
-            elif mapstatus == 13:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/-1-25.png', confidence=0.95) != None:
                 go_right()
                 time.sleep(5)
 
-            elif mapstatus == 14:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/0-25.png', confidence=0.95) != None:
                 go_right()
                 time.sleep(5)
 
-            elif mapstatus == 15:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/1-25.png', confidence=0.95) != None:
                 go_right()
                 time.sleep(5)
 
-            elif mapstatus == 16:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/2-25.png', confidence=0.95) != None:
                 go_down()
                 time.sleep(5)
 
-            elif mapstatus == 17:
-                mapstatus += 1
+            elif pyautogui.locateOnScreen('images/maps/2-24.png', confidence=0.95) != None:
+                go_left()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/1-24.png', confidence=0.95) != None:
+                go_left()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/0-24.png', confidence=0.95) != None:
+                go_left()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/-1-24.png', confidence=0.95) != None:
+                go_down()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/-1-23.png', confidence=0.95) != None:
+                go_right()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/0-23.png', confidence=0.95) != None:
+                go_right()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/1-23.png', confidence=0.95) != None:
+                go_right()
+                time.sleep(5)
+
+            elif pyautogui.locateOnScreen('images/maps/2-23.png', confidence=0.95) != None:
+                go_up()
+                time.sleep(5)
+                go_up()
+                time.sleep(5)
+                go_up()
+                time.sleep(5)
+                go_up()
+                time.sleep(5)
+                go_up()
+                time.sleep(5)
                 go_up()
                 time.sleep(5)
 
-            elif mapstatus == 18:
-                mapstatus += 1
-                go_up()
-                time.sleep(5)
 
-            elif mapstatus == 19:
-                mapstatus += 1
-                go_up()
-                time.sleep(5)
-
-            elif mapstatus == 20:
-                mapstatus += 1
-                go_up()
-                time.sleep(5)
-
-            elif mapstatus == 21:
-                mapstatus = 0
-                go_up()
-                time.sleep(5)
+            # if mapstatus == 0:
+            #     mapstatus += 1
+            #     go_down()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 1:
+            #     mapstatus += 1
+            #     go_left()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 2:
+            #     mapstatus += 1
+            #     go_left()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 3:
+            #     mapstatus += 1
+            #     go_left()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 4:
+            #     mapstatus += 1
+            #     go_down()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 5:
+            #     mapstatus += 1
+            #     go_right()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 6:
+            #     mapstatus += 1
+            #     go_right()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 7:
+            #     mapstatus += 1
+            #     go_right()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 8:
+            #     mapstatus += 1
+            #     go_down()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 9:
+            #     mapstatus += 1
+            #     go_left()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 10:
+            #     mapstatus += 1
+            #     go_left()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 11:
+            #     mapstatus += 1
+            #     go_left()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 12:
+            #     mapstatus += 1
+            #     go_down()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 13:
+            #     mapstatus += 1
+            #     go_right()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 14:
+            #     mapstatus += 1
+            #     go_right()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 15:
+            #     mapstatus += 1
+            #     go_right()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 16:
+            #     mapstatus += 1
+            #     go_down()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 17:
+            #     mapstatus += 1
+            #     go_up()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 18:
+            #     mapstatus += 1
+            #     go_up()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 19:
+            #     mapstatus += 1
+            #     go_up()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 20:
+            #     mapstatus += 1
+            #     go_up()
+            #     time.sleep(5)
+            #
+            # elif mapstatus == 21:
+            #     mapstatus = 0
+            #     go_up()
+            #     time.sleep(5)
 
     except Exception as ex:
         print(ex)
