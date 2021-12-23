@@ -239,103 +239,103 @@ while 1:
             print("I am unable to see anything")
             time.sleep(3.3)
             # If loops to change maps------------------------------------------
-            if pyautogui.locateOnScreen('images/maps/2-29.png', confidence=0.95) != None:
+            if pyautogui.locateOnScreen('images/maps/2-29.png', confidence=0.92) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-28.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-28.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-28.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-28.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-28.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-28.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-28.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-28.png', confidence=0.92) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-27.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-27.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-27.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-27.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-27.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-27.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-27.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-27.png', confidence=0.92) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-26.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-26.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-26.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-26.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-26.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-26.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-26.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-26.png', confidence=0.92) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-25.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-25.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-25.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-25.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-25.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-25.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-25.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-25.png', confidence=0.92) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-24.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-24.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-24.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-24.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-24.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-24.png', confidence=0.92) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-24.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-24.png', confidence=0.92) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-23.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-23.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-23.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-23.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-23.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-23.png', confidence=0.92) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-23.png', confidence=0.95) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-23.png', confidence=0.92) != None:
                 go_up()
                 time.sleep(5)
                 go_up()
