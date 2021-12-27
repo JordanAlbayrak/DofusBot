@@ -40,52 +40,52 @@ while 1:
     try:
 
         # Paysan--------------------------------------------------------------------
-        while pyautogui.locateOnScreen('images/ble.png', confidence=0.6) != None:
-            ble = pyautogui.locateOnScreen('images/ble.png', confidence=0.6)
-            location = pyautogui.center(ble)
-            pyautogui.click(location)
-            print("I can see ble")
-            time.sleep(6)
-
-        while pyautogui.locateOnScreen('images/ble2.png', confidence=0.6) != None:
-            ble = pyautogui.locateOnScreen('images/ble2.png', confidence=0.6)
-            location = pyautogui.center(ble)
-            pyautogui.click(location)
-            print("I can see ble2")
-            time.sleep(6)
-
-        while pyautogui.locateOnScreen('images/orge.png', confidence=0.6) != None:
-            orge = pyautogui.locateOnScreen('images/orge.png', confidence=0.6)
-            location = pyautogui.center(orge)
-            pyautogui.click(location)
-            print("I can see orge")
-            time.sleep(6)
-
-        while pyautogui.locateOnScreen('images/orge2.png', confidence=0.6) != None:
-            orge = pyautogui.locateOnScreen('images/orge2.png', confidence=0.6)
-            location = pyautogui.center(orge)
-            pyautogui.click(location)
-            print("I can see orge2")
-            time.sleep(6)
-
-        while pyautogui.locateOnScreen('images/avoine.png', confidence=0.5) != None:
-            avoine = pyautogui.locateOnScreen('images/avoine.png', confidence=0.5)
-            location = pyautogui.center(avoine)
-            pyautogui.click(location)
-            print("I can see avoine")
-            time.sleep(6)
-        while pyautogui.locateOnScreen('images/avoine2.png', confidence=0.5) != None:
-            avoine2 = pyautogui.locateOnScreen('images/avoine2.png', confidence=0.5)
-            location = pyautogui.center(avoine2)
-            pyautogui.click(location)
-            print("I can see avoine2")
-            time.sleep(6)
-        while pyautogui.locateOnScreen('images/avoine3.png', confidence=0.5) != None:
-            avoine3 = pyautogui.locateOnScreen('images/avoine3.png', confidence=0.5)
-            location = pyautogui.center(avoine3)
-            pyautogui.click(location)
-            print("I can see avoine3")
-            time.sleep(6)
+        # while pyautogui.locateOnScreen('images/ble.png', confidence=0.6) != None:
+        #     ble = pyautogui.locateOnScreen('images/ble.png', confidence=0.6)
+        #     location = pyautogui.center(ble)
+        #     pyautogui.click(location)
+        #     print("I can see ble")
+        #     time.sleep(6)
+        #
+        # while pyautogui.locateOnScreen('images/ble2.png', confidence=0.6) != None:
+        #     ble = pyautogui.locateOnScreen('images/ble2.png', confidence=0.6)
+        #     location = pyautogui.center(ble)
+        #     pyautogui.click(location)
+        #     print("I can see ble2")
+        #     time.sleep(6)
+        #
+        # while pyautogui.locateOnScreen('images/orge.png', confidence=0.6) != None:
+        #     orge = pyautogui.locateOnScreen('images/orge.png', confidence=0.6)
+        #     location = pyautogui.center(orge)
+        #     pyautogui.click(location)
+        #     print("I can see orge")
+        #     time.sleep(6)
+        #
+        # while pyautogui.locateOnScreen('images/orge2.png', confidence=0.6) != None:
+        #     orge = pyautogui.locateOnScreen('images/orge2.png', confidence=0.6)
+        #     location = pyautogui.center(orge)
+        #     pyautogui.click(location)
+        #     print("I can see orge2")
+        #     time.sleep(6)
+        #
+        # while pyautogui.locateOnScreen('images/avoine.png', confidence=0.5) != None:
+        #     avoine = pyautogui.locateOnScreen('images/avoine.png', confidence=0.5)
+        #     location = pyautogui.center(avoine)
+        #     pyautogui.click(location)
+        #     print("I can see avoine")
+        #     time.sleep(6)
+        # while pyautogui.locateOnScreen('images/avoine2.png', confidence=0.5) != None:
+        #     avoine2 = pyautogui.locateOnScreen('images/avoine2.png', confidence=0.5)
+        #     location = pyautogui.center(avoine2)
+        #     pyautogui.click(location)
+        #     print("I can see avoine2")
+        #     time.sleep(6)
+        # while pyautogui.locateOnScreen('images/avoine3.png', confidence=0.5) != None:
+        #     avoine3 = pyautogui.locateOnScreen('images/avoine3.png', confidence=0.5)
+        #     location = pyautogui.center(avoine3)
+        #     pyautogui.click(location)
+        #     print("I can see avoine3")
+        #     time.sleep(6)
         # Alchimiste--------------------------------------------------------------------
         while pyautogui.locateOnScreen('images/sauge.png', confidence=0.6) != None:
             sauge = pyautogui.locateOnScreen('images/sauge.png', confidence=0.6)
@@ -153,12 +153,30 @@ while 1:
             pyautogui.click(location)
             print("I can see mint2")
             time.sleep(8)
+        while pyautogui.locateOnScreen('images/mint3.png', confidence=0.7) != None:
+            mint3 = pyautogui.locateOnScreen('images/mint3.png', confidence=0.7)
+            location = pyautogui.center(mint3)
+            pyautogui.click(location)
+            print("I can see mint3")
+            time.sleep(8)
+        while pyautogui.locateOnScreen('images/mint4.png', confidence=0.8) != None:
+            mint3 = pyautogui.locateOnScreen('images/mint4.png', confidence=0.7)
+            location = pyautogui.center(mint3)
+            pyautogui.click(location)
+            print("I can see mint4")
+            time.sleep(8)
+        while pyautogui.locateOnScreen('images/mint5.png', confidence=0.7) != None:
+            mint5 = pyautogui.locateOnScreen('images/mint5.png', confidence=0.7)
+            location = pyautogui.center(mint5)
+            pyautogui.click(location)
+            print("I can see mint5")
+            time.sleep(8)
         while pyautogui.locateOnScreen('images/clover2.png', confidence=0.7) != None:
             clover2 = pyautogui.locateOnScreen('images/clover2.png', confidence=0.7)
             location = pyautogui.center(clover2)
             pyautogui.click(location)
             print("I can see clover2")
-            time.sleep(6)
+            time.sleep(8)
         while pyautogui.locateOnScreen('images/clover3.png', confidence=0.65) != None:
             clover3 = pyautogui.locateOnScreen('images/clover3.png', confidence=0.65)
             location = pyautogui.center(clover3)
@@ -171,12 +189,6 @@ while 1:
             pyautogui.click(location)
             print("I can see clover4")
             time.sleep(6)
-        while pyautogui.locateOnScreen('images/mint3.png', confidence=0.7) != None:
-            mint3 = pyautogui.locateOnScreen('images/mint3.png', confidence=0.7)
-            location = pyautogui.center(mint3)
-            pyautogui.click(location)
-            print("I can see mint3")
-            time.sleep(6)
         while pyautogui.locateOnScreen('images/clover5.png', confidence=0.75) != None:
             clover5 = pyautogui.locateOnScreen('images/clover5.png', confidence=0.75)
             location = pyautogui.center(clover5)
@@ -184,30 +196,30 @@ while 1:
             print("I can see clover5")
             time.sleep(6)
         # Bucheron--------------------------------------------------------------------
-        while pyautogui.locateOnScreen('images/frene1.png', confidence=0.85) != None:
-            frene1 = pyautogui.locateOnScreen('images/frene1.png', confidence=0.85)
-            location = pyautogui.center(frene1)
-            pyautogui.click(location)
-            print("I can see frene1")
-            time.sleep(8)
-        while pyautogui.locateOnScreen('images/frene2.png', confidence=0.7) != None:
-            frene2 = pyautogui.locateOnScreen('images/frene2.png', confidence=0.7)
-            location = pyautogui.center(frene2)
-            pyautogui.click(location)
-            print("I can see frene2")
-            time.sleep(8)
-        while pyautogui.locateOnScreen('images/chat.png', confidence=0.75) != None:
-            chat = pyautogui.locateOnScreen('images/chat.png', confidence=0.75)
-            location = pyautogui.center(chat)
-            pyautogui.click(location)
-            print("I can see chat")
-            time.sleep(8)
-        while pyautogui.locateOnScreen('images/chat2.png', confidence=0.7) != None:
-            chat2 = pyautogui.locateOnScreen('images/chat2.png', confidence=0.7)
-            location = pyautogui.center(chat2)
-            pyautogui.click(location)
-            print("I can see chat2")
-            time.sleep(8)
+        # while pyautogui.locateOnScreen('images/frene1.png', confidence=0.85) != None:
+        #     frene1 = pyautogui.locateOnScreen('images/frene1.png', confidence=0.85)
+        #     location = pyautogui.center(frene1)
+        #     pyautogui.click(location)
+        #     print("I can see frene1")
+        #     time.sleep(8)
+        # while pyautogui.locateOnScreen('images/frene2.png', confidence=0.7) != None:
+        #     frene2 = pyautogui.locateOnScreen('images/frene2.png', confidence=0.7)
+        #     location = pyautogui.center(frene2)
+        #     pyautogui.click(location)
+        #     print("I can see frene2")
+        #     time.sleep(8)
+        # while pyautogui.locateOnScreen('images/chat.png', confidence=0.75) != None:
+        #     chat = pyautogui.locateOnScreen('images/chat.png', confidence=0.75)
+        #     location = pyautogui.center(chat)
+        #     pyautogui.click(location)
+        #     print("I can see chat")
+        #     time.sleep(8)
+        # while pyautogui.locateOnScreen('images/chat2.png', confidence=0.7) != None:
+        #     chat2 = pyautogui.locateOnScreen('images/chat2.png', confidence=0.7)
+        #     location = pyautogui.center(chat2)
+        #     pyautogui.click(location)
+        #     print("I can see chat2")
+        #     time.sleep(8)
         # Combat--------------------------------------------------------------------
         while pyautogui.locateOnScreen('images/combat.png', confidence=0.8) is not None or pyautogui.locateOnScreen(
                 'images/combat2.png', confidence=0.8) is not None or pyautogui.locateOnScreen(
@@ -240,39 +252,39 @@ while 1:
             print("I am unable to see anything")
             time.sleep(3.3)
             # If loops to change maps------------------------------------------
-            if pyautogui.locateOnScreen('images/maps/2-29.png', confidence=0.91) != None:
+            if pyautogui.locateOnScreen('images/maps/2-29.png', confidence=0.87) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-28.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-28.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-28.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-28.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-28.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-28.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-28.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-28.png', confidence=0.87) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-27.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-27.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-27.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-27.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-27.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-27.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-27.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-27.png', confidence=0.87) != None:
                 go_down()
                 time.sleep(5)
 
@@ -280,63 +292,63 @@ while 1:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-26.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-26.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-26.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-26.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-26.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-26.png', confidence=0.87) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-25.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-25.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-25.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-25.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-25.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-25.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-25.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-25.png', confidence=0.87) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-24.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-24.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-24.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-24.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-24.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-24.png', confidence=0.87) != None:
                 go_left()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-24.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-24.png', confidence=0.87) != None:
                 go_down()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/-1-23.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/-1-23.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/0-23.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/0-23.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/1-23.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/1-23.png', confidence=0.87) != None:
                 go_right()
                 time.sleep(5)
 
-            elif pyautogui.locateOnScreen('images/maps/2-23.png', confidence=0.91) != None:
+            elif pyautogui.locateOnScreen('images/maps/2-23.png', confidence=0.86) != None:
                 go_up()
                 time.sleep(8)
                 go_up()
